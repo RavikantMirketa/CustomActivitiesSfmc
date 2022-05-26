@@ -1,5 +1,4 @@
 var connection = new Postmonger.Session();
-
 const activityJson = {
   name: '',
   id: null,
@@ -15,18 +14,21 @@ const activityJson = {
         },
         {
           LastName: '{{Contact.Attribute.Categories.LastName}}',
+        },
+        {
+          LastName: '{{Contact.Attribute.Categories.Description}}',
         }
       ],
-      url: 'https://requestbin.fullcontact.com/r92a9gr9/execute',
+      url: 'https://enmfx1ntjma3.x.pipedream.net/execute',
     },
   },
   configurationArguments: {
     publish: {
-      url: 'https://requestbin.fullcontact.com/r92a9gr9/publish',
+      url: 'https://enmfx1ntjma3.x.pipedream.net/publish',
     },
   },
   metaData: {
-    icon: 'https://sample-activity.herokuapp.com/icon.png',
+    icon: 'https://custom-journey-activity.herokuapp.com/icon.png',
     category: 'message',
     iconSmall: null,
     original_icon: 'icon.png',
